@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Model;
+namespace SimplePhpParser\Model;
 
 use PhpParser\Node\Const_;
 use PhpParser\Node\Expr\UnaryMinus;

@@ -1,6 +1,6 @@
 <?php
 
-namespace voku\SimplePhpParser\Model;
+namespace SimplePhpParser\Model;
 
 use PhpParser\Node\Expr\FuncCall;
 

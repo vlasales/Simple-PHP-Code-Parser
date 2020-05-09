@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Parsers;
+namespace SimplePhpParser\Parsers;
 
 use FilesystemIterator;
 use PhpParser\NodeTraverser;
@@ -11,11 +11,11 @@ use PhpParser\ParserFactory;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
-use voku\SimplePhpParser\Model\PhpCodeContainer;
-use voku\SimplePhpParser\Parsers\Helper\ParserErrorHandler;
-use voku\SimplePhpParser\Parsers\Helper\Utils;
-use voku\SimplePhpParser\Parsers\Visitors\ASTVisitor;
-use voku\SimplePhpParser\Parsers\Visitors\ParentConnector;
+use SimplePhpParser\Model\PhpCodeContainer;
+use SimplePhpParser\Parsers\Helper\ParserErrorHandler;
+use SimplePhpParser\Parsers\Helper\Utils;
+use SimplePhpParser\Parsers\Visitors\ASTVisitor;
+use SimplePhpParser\Parsers\Visitors\ParentConnector;
 
 final class PhpCodeParser
 {
@@ -26,12 +26,12 @@ final class PhpCodeParser
 
     public static function getPhpFiles(string $path): PhpCodeContainer
     {
-        new \voku\SimplePhpParser\Parsers\Helper\Psalm\FakeFileProvider();
+        new \SimplePhpParser\Parsers\Helper\Psalm\FakeFileProvider();
         $providers = new \Psalm\Internal\Provider\Providers(
-            new \voku\SimplePhpParser\Parsers\Helper\Psalm\FakeFileProvider()
+            new \SimplePhpParser\Parsers\Helper\Psalm\FakeFileProvider()
         );
         new \Psalm\Internal\Analyzer\ProjectAnalyzer(
-            new \voku\SimplePhpParser\Parsers\Helper\Psalm\FakeConfig(),
+            new \SimplePhpParser\Parsers\Helper\Psalm\FakeConfig(),
             $providers
         );
 

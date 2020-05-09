@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Model;
+namespace SimplePhpParser\Model;
 
 use Exception;
 use phpDocumentor\Reflection\DocBlock\Tags\Generic;
@@ -9,7 +9,7 @@ use phpDocumentor\Reflection\DocBlock\Tags\Return_;
 use PhpParser\Node\FunctionLike;
 use PhpParser\Node\Stmt\Function_;
 use ReflectionFunction;
-use voku\SimplePhpParser\Parsers\Helper\DocFactoryProvider;
+use SimplePhpParser\Parsers\Helper\DocFactoryProvider;
 
 class PHPFunction extends BasePHPElement
 {

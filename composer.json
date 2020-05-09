@@ -1,11 +1,11 @@
 {
-    "name": "voku/simple-php-code-parser",
+    "name": "simple-php-code-parser",
     "description": "",
     "type": "library",
     "keywords": [
         "php"
     ],
-    "homepage": "https://github.com/voku/Simple-PHP-Code-Parser",
+    "homepage": "https://github.com/vlasales/Simple-PHP-Code-Parser",
     "license": "MIT",
     "authors": [
         {
@@ -24,20 +24,20 @@
     },
     "autoload": {
         "psr-4": {
-            "voku\\": "src/voku/"
+            "SimplePhpParser\\": "src/"
         },
         "files": [
-            "src/voku/SimplePhpParser/Model/types/ArrayArray.php",
-            "src/voku/SimplePhpParser/Model/types/ArrayFloat.php",
-            "src/voku/SimplePhpParser/Model/types/ArrayInt.php",
-            "src/voku/SimplePhpParser/Model/types/ArrayString.php",
-            "src/voku/SimplePhpParser/Model/types/BooleanFalse.php",
-            "src/voku/SimplePhpParser/Model/types/BooleanTrue.php"
+            "src/Model/types/ArrayArray.php",
+            "src/Model/types/ArrayFloat.php",
+            "src/Model/types/ArrayInt.php",
+            "src/Model/types/ArrayString.php",
+            "src/Model/types/BooleanFalse.php",
+            "src/Model/types/BooleanTrue.php"
         ]
     },
     "autoload-dev": {
         "psr-4": {
-            "voku\\tests\\": "tests/"
+            "tests\\": "tests/"
         }
     }
 }

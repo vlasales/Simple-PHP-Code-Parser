@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Parsers\Visitors;
+namespace SimplePhpParser\Parsers\Visitors;
 
 use PhpParser\Node;
 use PhpParser\Node\Const_;
@@ -11,14 +11,14 @@ use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\Node\Stmt\Function_;
 use PhpParser\Node\Stmt\Interface_;
 use PhpParser\NodeVisitorAbstract;
-use voku\SimplePhpParser\Model\PHPClass;
-use voku\SimplePhpParser\Model\PhpCodeContainer;
-use voku\SimplePhpParser\Model\PHPConst;
-use voku\SimplePhpParser\Model\PHPDefineConstant;
-use voku\SimplePhpParser\Model\PHPFunction;
-use voku\SimplePhpParser\Model\PHPInterface;
-use voku\SimplePhpParser\Model\PHPMethod;
-use voku\SimplePhpParser\Parsers\Helper\Utils;
+use SimplePhpParser\Model\PHPClass;
+use SimplePhpParser\Model\PhpCodeContainer;
+use SimplePhpParser\Model\PHPConst;
+use SimplePhpParser\Model\PHPDefineConstant;
+use SimplePhpParser\Model\PHPFunction;
+use SimplePhpParser\Model\PHPInterface;
+use SimplePhpParser\Model\PHPMethod;
+use SimplePhpParser\Parsers\Helper\Utils;
 
 final class ASTVisitor extends NodeVisitorAbstract
 {

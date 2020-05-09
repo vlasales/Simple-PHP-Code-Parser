@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Parsers\Helper;
+namespace SimplePhpParser\Parsers\Helper;
 
 use RecursiveArrayIterator;
 use RecursiveIteratorIterator;

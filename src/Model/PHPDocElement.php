@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Model;
+namespace SimplePhpParser\Model;
 
 use Exception;
 use phpDocumentor\Reflection\DocBlock\Tag;
 use PhpParser\Node;
-use voku\SimplePhpParser\Parsers\Helper\DocFactoryProvider;
+use SimplePhpParser\Parsers\Helper\DocFactoryProvider;
 
 trait PHPDocElement
 {

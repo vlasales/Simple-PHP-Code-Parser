@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Model;
+namespace SimplePhpParser\Model;
 
 use PhpParser\Node\FunctionLike;
 use PhpParser\Node\Param;
@@ -150,7 +150,7 @@ class PHPParameter extends BasePHPElement
                 if (!empty($parsedParamTags)) {
                     foreach ($parsedParamTags as $parsedParamTag) {
                         if ($parsedParamTag instanceof \phpDocumentor\Reflection\DocBlock\Tags\Generic) {
-                            $spitedData = \voku\SimplePhpParser\Parsers\Helper\Utils::splitTypeAndVariable($parsedParamTag);
+                            $spitedData = \SimplePhpParser\Parsers\Helper\Utils::splitTypeAndVariable($parsedParamTag);
                             $parsedParamTagStr = $spitedData['parsedParamTagStr'];
                             $variableName = $spitedData['variableName'];
 

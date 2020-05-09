@@ -23,21 +23,21 @@ Parse a string:
 ```php
 $code = '
 <?php
-namespace voku\tests;
+namespace tests;
 class SimpleClass {}
 $obja = new class() {};
 $objb = new class {};
 class AnotherClass {}
 ';
-$phpCode = \voku\SimplePhpParser\Parsers\PhpCodeParser::getFromString($code);
+$phpCode = \SimplePhpParser\Parsers\PhpCodeParser::getFromString($code);
 $phpClasses = $phpCode->getClasses();
 
-var_dump($phpClasses['voku\tests\SimpleClass']); // "PHPClass"-object
+var_dump($phpClasses['tests\SimpleClass']); // "PHPClass"-object
 ```
 
 Parse one file:
 ```php
-$phpCode = \voku\SimplePhpParser\Parsers\PhpCodeParser::getPhpFiles(__DIR__ . '/Dummy.php');
+$phpCode = \SimplePhpParser\Parsers\PhpCodeParser::getPhpFiles(__DIR__ . '/Dummy.php');
 $phpClasses = $phpCode->getClasses();
 
 var_dump($phpClasses[Dummy::class]); // "PHPClass"-object
@@ -45,7 +45,7 @@ var_dump($phpClasses[Dummy::class]); // "PHPClass"-object
 
 Parse many files:
 ```php
-$phpCode = \voku\SimplePhpParser\Parsers\PhpCodeParser::getPhpFiles(__DIR__ . '/src');
+$phpCode = \SimplePhpParser\Parsers\PhpCodeParser::getPhpFiles(__DIR__ . '/src');
 $phpClasses = $phpCode->getClasses();
 
 var_dump($phpClasses[Dummy::class]); // "PHPClass"-object

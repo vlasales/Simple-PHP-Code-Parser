@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace voku\SimplePhpParser\Model;
+namespace SimplePhpParser\Model;
 
 use PhpParser\Node\Stmt\Namespace_;
 use PhpParser\NodeAbstract;
